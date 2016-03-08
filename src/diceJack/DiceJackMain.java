@@ -20,9 +20,9 @@ public class DiceJackMain {
 		while(taco = true){
 			
 			points = choice.funn(result);
-			total += points;
+			total = total + points;
 			
-			System.out.println("You've rolled a: " + points + " Your total: " + total);  //1st
+			System.out.println("You've rolled a: " + points + " Your total: " + total); 
 
 		}
 	}

@@ -20,6 +20,7 @@ public class Player {
 		playerName = PlayerName;
 		currentScore += choice.funn(result);
 		isPlaying = IsPlaying;
+		System.out.println(currentScore);
 		
 		
 		
@@ -27,7 +28,7 @@ public class Player {
 	public void aiPlayer(String PlayerName, int CurrentScore, boolean IsPlaying){
 		
 		playerName = PlayerName;
-		currentScore = CurrentScore;
+		currentScore += points;
 		isPlaying = IsPlaying;
 		
 	}

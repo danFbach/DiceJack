@@ -17,8 +17,8 @@ public class CurrentScores {
 	
 	public int scoreKeep(Integer player1){
 		player1 = choice.funn(result);
-		total += roll;
-		return player1;
+		total += player;
+		return total;
 		
 	}
 	
