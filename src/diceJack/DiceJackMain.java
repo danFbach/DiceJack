@@ -19,7 +19,7 @@ public class DiceJackMain {
 		
 		while(taco = true){
 		
-		test.funn(result);
+		System.out.println("You've rolled a: " + test.funn(result));
 		
 		}
 		
