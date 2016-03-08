@@ -1,30 +1,30 @@
 package diceJack;
 
-import java.util.Scanner;
 
 public class DiceJackMain {
 
 	public static void main(String[] args) {
-		
-		@SuppressWarnings("resource")
-		Scanner scan = new Scanner(System.in);
-		DiceRoll test = new DiceRoll();
-		
+				
 		Integer result = 0;
 		Integer choice1;
-		Integer whatever;
+		Integer total =0;
+		Integer points;
+		Integer current = 0;
+		//CurrentScores score = new CurrentScores();
 		DiceRoll choice = new DiceRoll();
 		boolean taco;
 		taco = true;
 		
-		while(taco = true){
-		
-		System.out.println("You've rolled a: " + test.funn(result));
-		
-		}
-		
-		
 
+		
+		while(taco = true){
+			
+			points = choice.funn(result);
+			total += points;
+			
+			System.out.println("You've rolled a: " + points + " Your total: " + total);  //1st
+
+		}
 	}
 
 }

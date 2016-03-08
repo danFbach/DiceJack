@@ -8,7 +8,6 @@ public class DiceRoll {
 	
 	public int funn(Integer pickNum){
 
-			Integer resultNum;
 			System.out.println("Pick Dice?");	
 			pickNum = scan.nextInt();
 			
