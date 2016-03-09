@@ -6,6 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class DiceRoll {
 	@SuppressWarnings("resource")
 	Scanner scan = new Scanner(System.in);
+	int pickNum;
 
 	public int funn(Integer pickNum) {
 		System.out.println("\nChoose a Dice to roll!\n" + "4 - 6 - 8 - 10 - 12 - 20\n"
@@ -44,6 +45,13 @@ public class DiceRoll {
 			System.out.println("\n" + pickNum + " is not a valid dice selection. Your turn has been skipped.");
 			pickNum = 0;
 			return pickNum;
+		}
+	}
+
+	public void stand() {
+		if (pickNum == 0) {
+			
+
 		}
 	}
 
