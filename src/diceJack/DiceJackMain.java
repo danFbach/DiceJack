@@ -6,12 +6,10 @@ public class DiceJackMain {
 	public static void main(String[] args) {
 				
 		Integer result = 0;
-		Integer choice1;
 		Integer total =0;
 		Integer total2 =0;
 		Integer points;
 		Integer points2;
-		Integer current = 0;
 		//CurrentScores score = new CurrentScores();
 		DiceRoll choice = new DiceRoll();
 		DiceRoll choice2 = new DiceRoll();
