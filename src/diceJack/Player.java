@@ -32,7 +32,7 @@ public class Player
 	{ 
 		System.out.println("what do you want to play until?");
 		scorereach = leer.nextInt();
-		return scorereach;
+		return limit();
 	}
 	
 	public int player1() 
