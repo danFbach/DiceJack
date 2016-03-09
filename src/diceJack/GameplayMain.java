@@ -2,7 +2,7 @@ package diceJack;
 
 import java.util.Scanner;
 
-public class GameplayMain extends DiceRoll {
+public class GameplayMain{
 	Scanner leer = new Scanner(System.in);
 
 	Integer result = 0;
@@ -13,7 +13,6 @@ public class GameplayMain extends DiceRoll {
 	Integer points;
 	Integer points2;
 	Integer current = 0;
-	// CurrentScores score = new CurrentScores();
 	DiceRoll choice = new DiceRoll();
 	DiceRoll choice2 = new DiceRoll();
 	Integer scorereach = null;
@@ -55,4 +54,14 @@ public class GameplayMain extends DiceRoll {
 	public void end() {
 		System.out.println("We have a winner");
 	}
+	public void menu(){
+		System.out.println("Would you like to play against a human or CPU opponent?");
+		
+		if()
+		
+		
+	}
+	
+	
 }
+
