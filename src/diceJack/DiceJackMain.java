@@ -2,10 +2,7 @@ package diceJack;
 
 public class DiceJackMain {
 	public static void main(String[] args) {
-		GameplayMain p1 = new GameplayMain();
-		Player playa = new Player();
-		
-		
+		GameplayMain p1 = new GameplayMain();		
 		p1.menu();
 	}
 }
