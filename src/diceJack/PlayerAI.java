@@ -1,16 +1,12 @@
 package diceJack;
-
 import java.util.concurrent.ThreadLocalRandom;
 
 public class PlayerAI 
 {
 	Integer totalAI = 0;
 	Integer pointsAI;
-	Integer difference;
-	
-	
-	public Integer playerAI(Integer scorereach){
-		
+	Integer difference;	
+	public Integer playerAI(Integer scorereach){		
 	difference = scorereach - totalAI;
 	if(difference > 12)
 	{
