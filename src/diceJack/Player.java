@@ -2,7 +2,8 @@ package diceJack;
 import java.util.Scanner;
 
 
-public class Player{
+public class Player
+{
 	
 	String playerName;
 	Integer currentScore;
@@ -27,53 +28,63 @@ public class Player{
 	Scanner leer = new Scanner(System.in);
 	
 	
-	public int limit() { 
+	public int limit() 
+	{ 
 		System.out.println("what do you want to play until?");
 		scorereach = leer.nextInt();
 		return scorereach;
 	}
 	
-	public int player1() {
+	public int player1() 
+	{
 		points = choice.funn(result);
 		total = total + points;
 		System.out.println("Player 1, you've rolled a: " + points + " Your total: " + total);
 		return total;
 	}
-	public int player2() {
+	public int player2() 
+	{
 		points2 = choice2.funn(result2);
 		total2 += points2;
 		System.out.println("Player 2, you've rolled a: " + points2 + " Your total: " + total2);
 		return total2;
 	}
 	 
-	public int playerAI(){
+	public int playerAI()
+	{
 		difference = scorereach - totalAI;
-		if(difference > 12){
+		if(difference > 12)
+		{
 			pointsAI = choice2.funn(20);
 			totalAI += pointsAI;   //roll 20 dice
 			System.out.println("AI-player rolled a: " + pointsAI + " AI-player total: " + totalAI);
 			return totalAI;
-		}else if(difference > 10){
+		}else if(difference > 10)
+		{
 			pointsAI = choice2.funn(12);
 			totalAI += pointsAI;   //roll 12 dice
 			System.out.println("AI-player rolled a: " + pointsAI + " AI-player total: " + totalAI);
 			return totalAI;
-		}else if(difference > 8){
+		}else if(difference > 8)
+		{
 			pointsAI = choice2.funn(10);
 			totalAI += pointsAI;   //roll 10 dice
 			System.out.println("AI-player rolled a: " + pointsAI + " AI-player total: " + totalAI);
 			return totalAI;
-		}else if(difference > 6){
+		}else if(difference > 6)
+		{
 			pointsAI = choice2.funn(8);
 			totalAI += pointsAI;   //roll 8 dice
 			System.out.println("AI-player rolled a: " + pointsAI + " AI-player total: " + totalAI);
 			return totalAI;
-		}else if(difference > 4){
+		}else if(difference > 4)
+		{
 			pointsAI = choice2.funn(6);
 			totalAI += pointsAI;   //roll 6 dice
 			System.out.println("AI-player rolled a: " + pointsAI + " AI-player total: " + totalAI);
 			return totalAI;
-		}else{
+		}else
+		{
 			pointsAI = choice2.funn(4);
 			totalAI += pointsAI;   //roll 4 dice
 			System.out.println("AI-player rolled a: " + pointsAI + " AI-player total: " + totalAI);
