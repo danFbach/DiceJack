@@ -16,9 +16,6 @@ public class Player
 
 	Scanner leer = new Scanner(System.in);
 	
-	
-	
-	
 	public int player1() 
 	{
 		points = choice.funn(result);
@@ -35,6 +32,3 @@ public class Player
 	}
 	
 }
-
-
-
