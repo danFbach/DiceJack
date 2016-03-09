@@ -11,18 +11,21 @@ public class GameplayMain
 	Integer scorereach;
 	DiceJackMain sum1 = new DiceJackMain();
 	Player rollP1 = new Player();
+	PlayerAI rollAI = new PlayerAI();
 	
 
 	
 
 
 	public int startif() 
-	{
-		scorereach = rollP1.limit();
+	{ 
+			System.out.println("what do you want to play until?");
+			scorereach = leer.nextInt();
+		
 		while ((scorereach > total) && (scorereach > total2)) 
 		{
 			rollP1.player1();
-			rollP1.playerAI();
+			rollAI.playerAI(scorereach);
 
 		}
 		System.out.println("we have a winner");
