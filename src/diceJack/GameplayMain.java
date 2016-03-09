@@ -36,23 +36,25 @@ public class GameplayMain extends DiceRoll {
 		return total2;
 	}
 
-	public void limit() {
+	public int limit() {
 		System.out.println("what do you want to play until?");
 		scorereach = leer.nextInt();
-		//return scorereach;
-		
+		return scorereach;
+
 	}
 
 	public int startif() {
 		limit();
-		while ((total < scorereach) && (total2 < scorereach)) {
+		while ((scorereach > total) && (scorereach > total2)) {
 			gameplay1();
-			gameplay2();	
+			gameplay2();
 
 		}
+		System.out.println("we have a winner");
 		return total;
 	}
-
+	
+	
 	public void end() {
 		System.out.println("We have a winner");
 	}
