@@ -15,13 +15,9 @@ public class CurrentScores {
 	Integer roll;
 	Integer total;
 
-
-	
 	public int scoreKeep(Integer player1) {
 		player1 = choice.funn(result);
 		total += player1;
 		return total;
-
 	}
-
 }
