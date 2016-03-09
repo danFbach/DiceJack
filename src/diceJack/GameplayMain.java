@@ -17,9 +17,6 @@ public class GameplayMain extends DiceRoll {
 	DiceRoll choice = new DiceRoll();
 	DiceRoll choice2 = new DiceRoll();
 	Integer scorereach = null;
-	// boolean taco;
-	// taco = true;
-
 	DiceJackMain sum1 = new DiceJackMain();
 
 	public int gameplay1() {
@@ -36,16 +33,16 @@ public class GameplayMain extends DiceRoll {
 		return total2;
 	}
 
-	public void limit() {
+	public int limit() {
 		System.out.println("what do you want to play until?");
 		scorereach = leer.nextInt();
-		//return scorereach;
+		return scorereach;
 		
 	}
 
 	public int startif() {
 		limit();
-		while ((total < scorereach) && (total2 < scorereach)) {
+		while ((scorereach > total) && (scorereach > total2)) {
 			gameplay1();
 			gameplay2();	
 
