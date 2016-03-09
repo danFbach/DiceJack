@@ -42,7 +42,7 @@ public class DiceRoll
 				System.out.println("\nYou have decided to sit this turn out.");
 				return pickNum;
 			default:
-				System.out.println("\nInvalid Dice Selection. Your turn has been skipped.");
+				System.out.println("\n" + pickNum +" is not a valid dice selection. Your turn has been skipped.");
 				pickNum = 0;
 				return pickNum;
 		}
