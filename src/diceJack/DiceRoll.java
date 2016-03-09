@@ -47,4 +47,5 @@ public class DiceRoll
 				return pickNum;
 		}
 	}
+	
 }

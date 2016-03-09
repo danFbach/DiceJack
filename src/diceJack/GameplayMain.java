@@ -13,67 +13,64 @@ public class GameplayMain {
 	Player rollP1 = new Player();
 	PlayerAI rollAI = new PlayerAI();
 
-	public int startif() 
-
-	
-	{System.out.println("what do you want to play until?");
-	scorereach = leer.nextInt();
-		while ((scorereach > total) || (scorereach > total2)) 
-		{
-			rollP1.player1();
-			rollP1.player2();
-
-	{ 
-			
-		
-		while ((scorereach > total) && (scorereach > total2)) 
-		{
-			rollP1.player1();
-			rollAI.playerAI(scorereach);
-		}
-		System.out.println("we have a winner");
-		}
-	return total;}
-	}
-
 	public void end() {
 		System.out.println("We have a winner");
 	}
-
+	public void bust(){
+		if((rollP1.total > scorereach)){
+			System.out.print("Player 1 has busted");			
+		}
+	}	
+		public void bust2(){
+			if((rollP1.total2 > scorereach)){
+				System.out.print("Player 2 has busted");	
+	}
+			
+		}
+		public void bustAI(){
+			if((rollAI.totalAI > scorereach)){
+				System.out.print("AI has busted");
+		}
+		}
 	public void menu() {
 		System.out.println("Would you like to play against a human or comp opponent?");
 		playeroption = leer.next();
 		if (playeroption.equals("human")) {
 			System.out.println("what do you want to play until?");
 			scorereach = leer.nextInt();
-				while (true) 
-				{
-					rollP1.player1();
-					if((scorereach < rollP1.total) || (scorereach < rollP1.total2)){
-						break;
-					}
-					rollP1.player2();
-					if((scorereach < rollP1.total) || (scorereach < rollP1.total2)){
-						break;
+			while (true) {
+				
+				rollP1.player1();
+				if ((scorereach < rollP1.total) || (scorereach < rollP1.total2)) {
+					bust();
+					break;
 				}
+				rollP1.player2();
+				if ((scorereach < rollP1.total) || (scorereach < rollP1.total2)) {
+					bust2();
+					break;
 				}
-				end();
-			
+			}
+			System.out.println("");
+			end();
+
 		} else if (playeroption.equals("comp")) {
 			System.out.println("what do you want to play until?");
 			scorereach = leer.nextInt();
-			while (true) 
-			{
+			while (true) {
 				rollP1.player1();
-				if((scorereach < rollP1.total) || (scorereach < rollP1.total2)){
+				if ((scorereach < rollP1.total) || (scorereach < rollAI.totalAI)) {
+					bust();
 					break;
 				}
 				rollAI.playerAI(scorereach);
-				if((scorereach < rollP1.total) || (scorereach < rollP1.total2)){
+				if ((scorereach < rollP1.total) || (scorereach < rollAI.totalAI)) {
+					bustAI();
 					break;
 				}
+			}
+			System.out.println("");
+			end();
 		}
-		end();	
 	}
 }
-		}
