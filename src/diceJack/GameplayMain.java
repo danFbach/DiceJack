@@ -13,26 +13,16 @@ public class GameplayMain{
 	Integer points;
 	Integer points2;
 	Integer current = 0;
+
+	Integer scorereach = null;
 	DiceRoll choice = new DiceRoll();
 	DiceRoll choice2 = new DiceRoll();
-	Integer scorereach = null;
 	DiceJackMain sum1 = new DiceJackMain();
+	Player rollP1 = new Player();
+	
 
-	public int gameplay1() {
-		points = choice.funn(result);
-		total = total + points;
-		System.out.println("p1 You've rolled a: " + points + " Your total: " + total);
-		return total;
-	}
-
-	public int gameplay2() {
-		points2 = choice2.funn(result2);
-		total2 = total2 + points2;
-		System.out.println("p2 You've rolled a: " + points2 + " Your total: " + total2);
-		return total2;
-	}
-
-	public int limit() {
+	
+	public int limit() { 
 		System.out.println("what do you want to play until?");
 		scorereach = leer.nextInt();
 		return scorereach;
@@ -42,8 +32,8 @@ public class GameplayMain{
 	public int startif() {
 		limit();
 		while ((scorereach > total) && (scorereach > total2)) {
-			gameplay1();
-			gameplay2();
+			rollP1.player1();
+			rollP1.player2();
 
 		}
 		System.out.println("we have a winner");
