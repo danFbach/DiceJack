@@ -25,7 +25,7 @@ public class GameplayMain
 		while ((scorereach > total) && (scorereach > total2)) 
 		{
 			rollP1.player1();
-			rollAI.playerAI(scorereach);
+			rollP1.player2();
 
 		}
 		System.out.println("we have a winner");

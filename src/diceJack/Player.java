@@ -38,15 +38,3 @@ public class Player
 
 
 
-
-
-
-//	public void humanPlayer(String PlayerName, int CurrentScore, boolean IsPlaying){
-//		
-//		playerName = PlayerName;
-//		currentScore = CurrentScore;
-//		isPlaying = IsPlaying;
-//		
-//		
-//		
-//	}
