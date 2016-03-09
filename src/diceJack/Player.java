@@ -1,6 +1,7 @@
 package diceJack;
 
-public class Player {
+public class Player 
+{
 	
 	String playerName;
 	
@@ -15,21 +16,20 @@ public class Player {
 	Integer current = 0;
 	Integer difference;
 	GameplayMain total = new GameplayMain();
-	DiceRoll choice = new DiceRoll();
 	
+	Integer gameLimit 
+	
+	gameLimit= total.limit(scorereach);
 	difference = total.gameplay1();
 	
 	
-	public void humanPlayer(String PlayerName, int CurrentScore, boolean IsPlaying){
+	
+	
+	
+
+	public void AIplayer(String PlayerName, int CurrentScore, boolean IsPlaying){
 		
-		playerName = PlayerName;
-		currentScore = CurrentScore;
-		isPlaying = IsPlaying;
 		
-		
-		
-	}
-	public void aiPlayer(String PlayerName, int CurrentScore, boolean IsPlaying){
 		
 		playerName = PlayerName;
 		currentScore = CurrentScore;
@@ -51,3 +51,18 @@ public class Player {
 		}
 	}
 }
+
+
+
+
+
+
+//	public void humanPlayer(String PlayerName, int CurrentScore, boolean IsPlaying){
+//		
+//		playerName = PlayerName;
+//		currentScore = CurrentScore;
+//		isPlaying = IsPlaying;
+//		
+//		
+//		
+//	}

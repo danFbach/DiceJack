@@ -17,9 +17,6 @@ public class GameplayMain extends DiceRoll {
 	DiceRoll choice = new DiceRoll();
 	DiceRoll choice2 = new DiceRoll();
 	Integer scorereach = null;
-	// boolean taco;
-	// taco = true;
-
 	DiceJackMain sum1 = new DiceJackMain();
 
 	public int gameplay1() {
