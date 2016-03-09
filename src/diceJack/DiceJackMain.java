@@ -4,7 +4,7 @@ public class DiceJackMain {
 	public static void main(String[] args) {
 
 		GameplayMain p1 = new GameplayMain();
-				p1.menu();
+		p1.menu();
 
 	}
 }

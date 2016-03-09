@@ -1,10 +1,9 @@
 package diceJack;
+
 import java.util.Scanner;
 
+public class Player {
 
-public class Player
-{
-	
 	Integer result = 0;
 	Integer result2 = 0;
 	Integer total = 0;
@@ -15,20 +14,19 @@ public class Player
 	DiceRoll choice2 = new DiceRoll();
 
 	Scanner leer = new Scanner(System.in);
-	
-	public int player1() 
-	{
+
+	public int player1() {
 		points = choice.funn(result);
 		total = total + points;
 		System.out.println("Player 1, you've rolled a: " + points + " Your total: " + total);
 		return total;
 	}
-	public int player2() 
-	{
+
+	public int player2() {
 		points2 = choice2.funn(result2);
 		total2 += points2;
 		System.out.println("Player 2, you've rolled a: " + points2 + " Your total: " + total2);
 		return total2;
 	}
-	
+
 }
