@@ -12,8 +12,6 @@ public class DiceRoll {
 			pickNum = scan.nextInt();
 			
 			switch(pickNum){
-			case (0):
-				System.out.println("\nYou have decided to sit this turn out.");;
 			case (4):
 				pickNum = ThreadLocalRandom.current().nextInt(1, 5);
 				return pickNum;
@@ -31,6 +29,9 @@ public class DiceRoll {
 				return pickNum;
 			case (20):
 				pickNum = ThreadLocalRandom.current().nextInt(1, 21);
+				return pickNum;
+			case (0):
+				System.out.println("\nYou have decided to sit this turn out.");
 				return pickNum;
 			default:
 				System.out.println("\nInvalid Dice Selection. Your turn has been skipped.");

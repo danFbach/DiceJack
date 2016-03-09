@@ -1,13 +1,12 @@
 package diceJack;
+import java.util.Scanner;
+
 
 public class Player{
 	
 	String playerName;
-	
 	Integer currentScore;
-	
 	boolean isPlaying;
-	
 	Integer result = 0;
 	Integer result2 = 0;
 	Integer choice1;
@@ -24,10 +23,15 @@ public class Player{
 	Integer scorereach;
 	DiceRoll choice = new DiceRoll();
 	DiceRoll choice2 = new DiceRoll();
-	//GameplayMain numLimit = new GameplayMain();
+
+	Scanner leer = new Scanner(System.in);
 	
 	
-	
+	public int limit() { 
+		System.out.println("what do you want to play until?");
+		scorereach = leer.nextInt();
+		return scorereach;
+	}
 	
 	public int player1() {
 		points = choice.funn(result);
@@ -43,7 +47,6 @@ public class Player{
 	}
 	 
 	public int playerAI(){
-		numLimit.limit();
 		difference = scorereach - totalAI;
 		if(difference > 12){
 			pointsAI = choice2.funn(20);
