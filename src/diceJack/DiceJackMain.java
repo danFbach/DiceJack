@@ -11,27 +11,24 @@ public class DiceJackMain {
 		Integer points;
 		Integer points2;
 		//CurrentScores score = new CurrentScores();
-		DiceRoll choice = new DiceRoll();
-		DiceRoll choice2 = new DiceRoll();
 		boolean taco;
 		taco = true;
-		
-
+		DiceRoll choice = new DiceRoll();
+		DiceRoll choice2 = new DiceRoll();
+		GameplayMain p1 = new GameplayMain();
 		
 		while(taco = true){
 			
-			points = choice.funn(result);
-			total = total + points;
 			
-			System.out.println("p1 You've rolled a: " + points + " Your total: " + total);
+			//p1.limit();
+			//p1.startif();
+			//p1.end();
+			p1.gameplay1();
+			p1.gameplay2();
 			
-			points2 = choice2.funn(result);
-			total2 = total2 + points2;
-
-			System.out.println("p2 You've rolled a: " + points2 + " Your total: " + total2);
-			 
 
 		}
 	}
+}	
 
-}
+

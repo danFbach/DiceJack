@@ -9,6 +9,7 @@ public class Player {
 	boolean isPlaying;
 	
 	Integer result = 0;
+	Integer result2 = 0;
 	Integer choice1;
 	Integer whatever;
 	Integer current = 0;

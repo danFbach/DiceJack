@@ -1,11 +1,12 @@
 package diceJack;
+
 import java.util.Scanner;
 
 public class CurrentScores {
-	
+
 	@SuppressWarnings("resource")
 	Scanner scan = new Scanner(System.in);
-	
+
 	Integer result = 0;
 	DiceRoll choice = new DiceRoll();
 	Player playerName = new Player();
@@ -14,13 +15,13 @@ public class CurrentScores {
 	Integer roll;
 	Integer total;
 
+
 	
-	
-	public int scoreKeep(Integer player1){
+	public int scoreKeep(Integer player1) {
 		player1 = choice.funn(result);
 		total += player1;
 		return total;
-		
+
 	}
-	
+
 }
