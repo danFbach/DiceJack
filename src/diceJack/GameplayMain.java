@@ -34,4 +34,13 @@ public class GameplayMain
 	{
 		System.out.println("We have a winner");
 	}
+	public void menu(){
+		System.out.println("Would you like to play against a human or CPU opponent?");
+		
+		
+		
+	}
+	
+	
 }
+
