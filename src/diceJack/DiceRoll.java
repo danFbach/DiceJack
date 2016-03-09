@@ -1,6 +1,6 @@
 package diceJack;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class DiceRoll {
 	@SuppressWarnings("resource")
@@ -8,10 +8,12 @@ public class DiceRoll {
 	
 	public int funn(Integer pickNum){
 
-			System.out.println("Pick Dice?");	
+			System.out.println("\nChoose a Dice to roll!\n"+"4 - 6 - 8 - 10 - 12 - 20\n"+"Or, choose 0 in order to skip this turn.");	
 			pickNum = scan.nextInt();
 			
 			switch(pickNum){
+			case (0):
+				System.out.println("\nYou have decided to sit this turn out.");;
 			case (4):
 				pickNum = ThreadLocalRandom.current().nextInt(1, 5);
 				return pickNum;
@@ -31,11 +33,9 @@ public class DiceRoll {
 				pickNum = ThreadLocalRandom.current().nextInt(1, 21);
 				return pickNum;
 			default:
+				System.out.println("\nInvalid Dice Selection. Your turn has been skipped.");
+				pickNum = 0;
 				return pickNum;
-					
+		}
 	}
-
-	
-	}
-
 }

@@ -1,21 +1,23 @@
 package diceJack;
 
 
-public class DiceJackMain {
-
-	public static void main(String[] args) {
-				
-		Integer result = 0;
+public class DiceJackMain {Integer result = 0;
 		Integer total =0;
 		Integer total2 =0;
 		Integer points;
 		Integer points2;
-		//CurrentScores score = new CurrentScores();
-		boolean taco;
-		taco = true;
+		
 		DiceRoll choice = new DiceRoll();
 		DiceRoll choice2 = new DiceRoll();
+
+	public static void main(String[] args) {
+				
+
+		boolean taco; 		//TEMP FOR TESTING.
+		taco = true;
+
 		GameplayMain p1 = new GameplayMain();
+		
 		
 		while(taco = true){
 			
