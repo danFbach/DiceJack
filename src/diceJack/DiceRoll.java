@@ -10,7 +10,7 @@ public class DiceRoll {
 
 	public int funn(Integer pickNum) {
 		System.out.println("\nChoose a Dice to roll!\n" + "4 - 6 - 8 - 10 - 12 - 20\n"
-				+ "Or, choose 0 in order to skip this turn.");
+				+ "Or, choose 0 in order to stand at your current number.");
 		pickNum = scan.nextInt();
 
 		switch (pickNum) {
@@ -39,7 +39,7 @@ public class DiceRoll {
 			pickNum = ThreadLocalRandom.current().nextInt(1, 21);
 			return pickNum;
 		case (0):
-			System.out.println("\nYou have decided to sit this turn out.");
+			System.out.println("\nYou have decided to stand.");
 			return pickNum;
 		default:
 			System.out.println("\n" + pickNum + " is not a valid dice selection. Your turn has been skipped.");

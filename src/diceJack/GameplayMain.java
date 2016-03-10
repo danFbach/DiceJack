@@ -9,6 +9,8 @@ public class GameplayMain {
 	Integer total2 = 0;
 	Integer scorereach;
 	String playeroption;
+	String player1;
+	String player2;
 	DiceJackMain sum1 = new DiceJackMain();
 	Player rollP1 = new Player();
 	PlayerAI rollAI = new PlayerAI();
@@ -19,27 +21,27 @@ public class GameplayMain {
 
 	public void bust() {
 		if ((rollP1.total > scorereach)) {
-			System.out.print("Player 1 has busted.. The P1 final score is: "+ rollP1.total + " .  " +"Player 2 final score:"+rollP1.total2);
+			System.out.print("Final score is Player 1: "+ rollP1.total + ". Player 2 final score:"+rollP1.total2);
 			
 		}
 	}
 
 	public void bustuser(){
 		if ((rollP1.total > scorereach)) {
-			System.out.print("Player 1 has busted.. The P1 final score is: "+ rollP1.total + " .  " +"AI Player  final score:"+rollAI.totalAI);
+			System.out.print("Final score is Player 1: "+ rollP1.total + ". AI Player  final score:"+rollAI.totalAI);
 			
 		}
 	}	
 	public void bust2() {
 		if ((rollP1.total2 > scorereach)) {
-			System.out.print("Player 2 has busted.. The P1 final score is: "+ rollP1.total + " .  " +"Player 2 final score:"+rollP1.total2);
+			System.out.print("Final score is Player 1: "+ rollP1.total + ". Player 2 final score:"+rollP1.total2);
 		}
 
 	}
 
 	public void bustAI() {
 		if ((rollAI.totalAI > scorereach)) {
-			System.out.print("AI has busted.. The P1 final score is: "+ rollP1.total + " .  " +"AI Player  final score:"+rollAI.totalAI);
+			System.out.print("Final score is Player 1: "+ rollP1.total + ". AI Player  final score:"+rollAI.totalAI);
 		}
 	}
 
@@ -50,7 +52,6 @@ public class GameplayMain {
 			System.out.println("what do you want to play until?");
 			scorereach = leer.nextInt();
 			while (true) {
-
 				rollP1.player1();
 				if ((scorereach < rollP1.total) || (scorereach < rollP1.total2)) {
 					bust();
@@ -65,7 +66,7 @@ public class GameplayMain {
 			System.out.println("");
 			end();
 
-		} else if (playeroption.equals("comp")) {
+		}else if (playeroption.equals("comp")) {
 			System.out.println("what do you want to play until?");
 			scorereach = leer.nextInt();
 			while (true) {
